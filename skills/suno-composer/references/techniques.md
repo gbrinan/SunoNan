@@ -1,6 +1,6 @@
 # Advanced Prompt Techniques
 
-Load when the task needs emotion arcs, duets, special vocal effects, or Suno V5 Studio features.
+Load when the task needs emotion arcs, duets, special vocal effects, or Suno V5/V5.5 platform features.
 
 ## Emotion-arc tags (verified)
 
@@ -39,6 +39,16 @@ Load when the task needs emotion arcs, duets, special vocal effects, or Suno V5 
 - Dynamics: "Let the mix breathe", "Build intensity gradually toward the end"
 - Separation: "Keep clear separation between instruments", "Focus on clarity rather than loudness"
 - Structure/length: "Make the intro longer", "Let the outro fade slowly and emotionally"
+
+## Suno V5.5 platform features (as of 2026-08)
+
+v5.5 (released 2026-03-26) added creation features on top of V5; prompt syntax (structure tags, Styles limits) is unchanged.
+
+- Voices: record or upload your own audio to sing on your creations (Pro/Premier; voice is private to the uploader)
+- Custom Models: upload 6+ of your tracks to train a personalized v5.5 that knows your sound
+- My Taste: learns your go-to genres/moods/references and applies them via the Magic Wand
+- Duration slider: pick song length in the Create form (web, v5.5 model)
+- Lyricist: save lyrical style examples, natural-language lyric editing, full-screen editor
 
 ## Suno V5 Studio
 
