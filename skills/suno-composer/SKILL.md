@@ -83,10 +83,10 @@ Inside the block: no emoji, no markdown, no lists, no commentary. Each Styles se
 
 ## Self-check
 
-Before responding, run the validator on the final block:
+Before responding, run the bundled validator on the final block with any Python 3 interpreter, passing the block as a file or on stdin (the script path is relative to this skill directory):
 
 ```bash
-python skills/suno-composer/scripts/validate_block.py final_block.txt
+python3 scripts/validate_block.py final_block.txt
 ```
 
 It checks: block ordering markers, forbidden content, quote balance, parentheses used as meta tags, Styles in English, and length. Fix violations silently and re-run until it passes. Also confirm manually that the lyrics are byte-identical to the user's input.
