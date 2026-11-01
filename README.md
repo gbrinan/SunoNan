@@ -1,5 +1,7 @@
 # SunoNan
 
+![SunoNan](.github/banner.jpg)
+
 **전직 엔터테인먼트 회사 AI 종사자가 말아드리는 Suno 스킬.**
 
 가사 한 줄이나 "비 오는 밤에 듣기 좋은 재즈 발라드" 같은 한 문장을 주면, Suno 커스텀 모드에 그대로 붙여 넣을 `Lyrics:` + `Styles:` 블록을 만들어 주는 Claude 스킬입니다.
