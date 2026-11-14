@@ -1,5 +1,9 @@
 # Progress
 
+## Session 2026-11-15
+
+- Added opt-in chord progression option (머니코드): trigger rules in SKILL.md, five progressions with major/minor forms in references/keywords.md §8, `[chord:]` tag, README note.
+
 ## Session 2026-08-31
 
 - Set up repository with file-based planning workflow (tasks.md / findings.md / progress.md).

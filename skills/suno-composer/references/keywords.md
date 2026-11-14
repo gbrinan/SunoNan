@@ -113,3 +113,13 @@ Verified sample:
 > Minor, Lo-fi hiphop, 60bpm, Melancholic piano keys with vinyl crackle sound, Whispery female vocals, Nostalgic atmosphere, Late night vibes
 
 Suno weights earlier elements more heavily - put the most important element first.
+
+## 8. Chord progressions (머니코드, opt-in only)
+
+| Option | Major key | Minor key | Feel / fits |
+|---|---|---|---|
+| 1564 (기본 머니코드) | I–V–vi–IV (C–G–Am–F) | III–VII–i–VI | Pop anthem, ballad, singalong chorus |
+| 6415 | vi–IV–I–V | i–VI–III–VII (Am–F–C–G) | Emotional pop, bittersweet start |
+| 4536 (감성 진행) | IV–V–iii–vi | VI–VII–v–i | K-pop / J-pop ballad, OST, longing chorus |
+| 캐논 진행 | I–V–vi–iii–IV–I–IV–V | — (switch to major or use 1564) | Wedding, lullaby, warm classical-pop |
+| 1645 (레트로) | I–vi–IV–V | — | 50s doo-wop, oldies, cute retro |
