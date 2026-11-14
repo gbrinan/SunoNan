@@ -9,7 +9,7 @@ Convert user input into one artifact: a **final block** containing `Lyrics:` and
 
 ## Input
 
-Accept any of: full lyrics, partial lyrics, a one-line hook, a description ("비 오는 밤에 듣기 좋은 재즈 발라드"), or lyrics with inline tags: `[style:]` `[genre:]` `[mood:]` `[tempo:]` `[instrument:]` `[vocal:]` `[scene:]`.
+Accept any of: full lyrics, partial lyrics, a one-line hook, a description ("비 오는 밤에 듣기 좋은 재즈 발라드"), or lyrics with inline tags: `[style:]` `[genre:]` `[mood:]` `[tempo:]` `[instrument:]` `[vocal:]` `[scene:]` `[chord:]`.
 
 ## Inference
 
@@ -38,6 +38,15 @@ Default 3 sentences (2–4 allowed), English only, one idea per sentence, no rep
 4. (optional) Rhythm, energy flow, emotional arc
 
 Be specific — "Bright pop track, 110 BPM, female vocals, chorus with big synth hook, verse with intimate piano." beats "happy pop song". Front-load what matters most: Suno weights earlier words more.
+
+## Chord progression option (머니코드)
+
+Off by default — never add a progression unless the user asks. Turn it on when the user says "머니코드", "money chord", "익숙한/대중적인 코드 진행", names a progression, or uses `[chord:]` (e.g. `[chord: 4536]`, `[chord: 머니코드]`). The five options (1564, 6415, 4536, 캐논, 1645) with major/minor forms are in [references/keywords.md](references/keywords.md) §8.
+
+- Only "머니코드" with no choice → pick by genre/mood: ballad/pop → 1564, sad pop → 6415, K-pop/J-pop/OST → 4536, wedding/lullaby/classical → 캐논, retro → 1645. Name the pick and the alternatives in the tuning note.
+- Several versions → each may use a different option; say which.
+- One Styles sentence, placed second, Roman numerals plus chord names in the song's key: `"Chorus built on the familiar I–V–vi–IV progression (G–D–Em–C), with the verse on vi–IV–I–V."` Chord letters must match the key in sentence 1. Say "canon-style progression", never a composer name. Stay within 2–4 sentences.
+- Suno treats it as a strong hint, not a guarantee — say so once in the tuning note. Never put chord names in the lyrics.
 
 ## Lyrics structure
 
@@ -89,4 +98,4 @@ Before responding, run the bundled validator on the final block with any Python 
 python3 scripts/validate_block.py final_block.txt
 ```
 
-It checks: block ordering markers, forbidden content, quote balance, parentheses used as meta tags, Styles in English, and length. Fix violations silently and re-run until it passes. Also confirm manually that the lyrics are byte-identical to the user's input.
+It checks: block ordering markers, forbidden content, quote balance, parentheses used as meta tags, Styles in English, and length. Fix violations silently and re-run until it passes. Also confirm manually that the lyrics are byte-identical to the user's input, and that a chord progression appears only when the user asked for one, with chord letters matching the stated key.
